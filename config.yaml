@@ -1,0 +1,29 @@
+# 1. 你感兴趣的论文领域 (可以添加多个)
+# cs.AI (人工智能), cs.CV (计算机视觉), cs.CL (自然语言处理)
+arxiv_categories:
+  - cs.AI
+  - cs.CL
+
+# 2. 总结语言：设置为 zh 表示中文
+language: zh
+
+# 3. 筛选关键词 (只有标题或摘要包含这些词的论文才会被总结，留空则总结全部)
+keywords:
+  - "Large Language Model"
+  - "Agent"
+
+# 4. 模型配置
+# 如果你用的是 DeepSeek，provider 填 deepseek
+# 如果你用的是 OpenAI，provider 填 openai
+model_provider: deepseek 
+model_name: deepseek-chat
+
+# 5. 总结的详细程度 (可选: brief, detailed)
+summary_level: detailed
+
+# 6. 推送渠道配置 (保持为 true 即可，具体的 Key 我们在 Secrets 里设置)
+push_config:
+  feishu: true
+  dingtalk: false
+  wechat: false
+  email: false
